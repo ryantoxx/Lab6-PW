@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const RecipeActions = ({ recipe, updateAddedRecipes }) => {
+const RecipeActions = ({ recipe, updateAddedRecipes, updateAddedRecipesToRemove }) => {
   const [added, setAdded] = useState(localStorage.getItem(`added_${recipe.title}`) === 'true');
 
   const toggleLike = () => {

@@ -12,6 +12,11 @@ function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
+    const storedRecipes = Object.keys(localStorage)
+      .filter(key => key.startsWith('added_') && localStorage.getItem(key) === "true")
+      .map(key => ({ title: key.replace('added_', '') }));
+    setAddedRecipes(storedRecipes);
+
     const storedTheme = localStorage.getItem('theme');
     const isDark = storedTheme === 'dark';
     setIsDarkMode(isDark);
@@ -60,7 +65,10 @@ function App() {
       ) : (
         <div>
           <h1>Recipe Search</h1>
-          <RecipeSearch updateAddedRecipes={updateAddedRecipes} updateAddedRecipesToRemove={updateAddedRecipesToRemove} />
+          <RecipeSearch 
+            updateAddedRecipes={updateAddedRecipes} 
+            updateAddedRecipesToRemove={updateAddedRecipesToRemove} 
+          />
           {showPersonalCabinet && <PersonalCabinet addedRecipes={addedRecipes} />}
           <button className="cabinet-button" onClick={handleTogglePersonalCabinet}>
             {showPersonalCabinet ? 'Hide Personal Cabinet' : 'Show Personal Cabinet'}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import RecipeActions from './RecipeActions';
 
-const RecipeSearch = () => {
+const RecipeSearch = ({ updateAddedRecipes, updateAddedRecipesToRemove }) => {
   const [query, setQuery] = useState('');
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -49,7 +49,11 @@ const RecipeSearch = () => {
               <p><strong>Ingredients:</strong> {recipe.ingredients}</p>
               <p><strong>Servings:</strong> {recipe.servings}</p>
               <p><strong>Instructions:</strong> {recipe.instructions}</p>
-              <RecipeActions recipe={recipe} />
+              <RecipeActions 
+                recipe={recipe} 
+                updateAddedRecipes={updateAddedRecipes}
+                updateAddedRecipesToRemove={updateAddedRecipesToRemove} 
+              />
             </li>
           ))}
         </ul>
@@ -59,4 +63,3 @@ const RecipeSearch = () => {
 };
 
 export default RecipeSearch;
-
