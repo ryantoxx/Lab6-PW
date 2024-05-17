@@ -1,0 +1,218 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #A49E9E
+}
+
+.dark-mode .start-exploring-button {
+  background-color: #76ABAE;
+  color: #ffffff;
+}
+
+.dark-mode .start-exploring-button:hover {
+  background-color: #487f82;
+}
+
+.dark-mode .search-button {
+  background-color: #76ABAE;
+  color: #ffffff;
+}
+
+.dark-mode .search-button:hover {
+  background-color: #487f82;
+}
+
+.dark-mode .add-button {
+  background-color: #76ABAE;
+  color: #ffffff;
+}
+
+.dark-mode .add-button:hover {
+  background-color: #487f82;
+}
+
+.dark-mode .cabinet-button {
+  background-color: #76ABAE;
+  color: #ffffff;
+}
+
+.dark-mode .cabinet-button:hover {
+  background-color: #487f82;
+}
+
+
+body.dark-mode {
+  background-color: #222831;
+  color: #ffffff;
+}
+
+
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #222222;
+}
+ 
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.welcome-page {
+  text-align: center;
+  margin-top: 220px;
+}
+
+.start-exploring-button {
+  background-color: #F06071;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-exploring-button:hover {
+  background-color: #be4856;
+}
+
+.RecipeSearch {
+  text-align: center;
+  max-width: 100%; 
+  margin: 0 auto; 
+}
+
+.search-bar-container {
+  position: sticky;
+  top: 0; 
+  padding: 10px;
+  z-index: 1;
+}
+
+.search-bar {
+  width: calc(100% - 100px); 
+  box-sizing: border-box; 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  margin-right: 8px;
+}
+
+.search-button {
+  background-color: #F06071;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #be4856;
+}
+
+.recipe-list-container {
+  margin-top: 20px; 
+}
+
+.RecipeList {
+  list-style: none;
+  padding: 0;
+}
+
+.RecipeItem {
+  margin-bottom: 20px; /* Reduce bottom margin */
+  padding: 15px; /* Reduce padding */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Style the headings */
+.RecipeItem h3 {
+  margin-top: 0; /* Remove top margin of h3 */
+  margin-bottom: 10px; /* Add bottom margin for spacing */
+  font-size: 18px; /* Adjust font size */
+}
+
+/* Style the paragraphs */
+.RecipeItem p {
+  margin-bottom: 8px; /* Add bottom margin for spacing */
+  font-size: 14px; /* Adjust font size */
+  text-align: justify;
+}
+
+/* Style the strong tags */
+.RecipeItem strong {
+  font-weight: bold; /* Make strong text bold */
+}
+
+.add-button {
+  background-color: #F06071;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #be4856;
+}
+
+.cabinet-button {
+  background-color: #F06071;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cabinet-button:hover {
+  background-color: #be4856;
+}
+
+.cabinet ul {
+  list-style-type: none;
+  padding: 0;
+}
