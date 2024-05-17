@@ -50,8 +50,6 @@ body.dark-mode {
   color: #ffffff;
 }
 
-
-
 .theme-toggle {
   position: fixed;
   top: 20px;
@@ -151,29 +149,28 @@ body.dark-mode {
 }
 
 .RecipeItem {
-  margin-bottom: 20px; /* Reduce bottom margin */
-  padding: 15px; /* Reduce padding */
+  margin-bottom: 20px; 
+  padding: 15px; 
   border: 1px solid #ccc;
   border-radius: 8px;
 }
 
-/* Style the headings */
+
 .RecipeItem h3 {
-  margin-top: 0; /* Remove top margin of h3 */
-  margin-bottom: 10px; /* Add bottom margin for spacing */
-  font-size: 18px; /* Adjust font size */
+  margin-top: 0; 
+  margin-bottom: 10px; 
+  font-size: 18px; 
 }
 
-/* Style the paragraphs */
 .RecipeItem p {
-  margin-bottom: 8px; /* Add bottom margin for spacing */
-  font-size: 14px; /* Adjust font size */
+  margin-bottom: 8px; 
+  font-size: 14px; 
   text-align: justify;
 }
 
-/* Style the strong tags */
+
 .RecipeItem strong {
-  font-weight: bold; /* Make strong text bold */
+  font-weight: bold; 
 }
 
 .add-button {
